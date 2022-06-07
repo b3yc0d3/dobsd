@@ -8,42 +8,63 @@ Since the Discord Developers seems to not care, let's try it our self's.<br>
 Inspired by the articel [FreeBSD Support for Discord App](https://support.discord.com/hc/en-us/community/posts/360068878251-FreeBSD-Support-for-Discord-App) in the Discord Support Forum.
 
 ## Status
-Currently DoBSD is *not* working at all,<br>
-we have *some* buggs.
+<table>
+    <thead>
+        <td></td>
+        <td>FreeBSD</td>
+        <td>NetBSD</td>
+        <td>OpenBSD</td>
+    </thead>
+    <tbody>
+        <tr style="text-align: right;">
+            <td title="Version of Distro">Version:</td>
+            <td>13.1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr style="text-align: right;">
+            <td title="Version of Discord">Discord:</td>
+            <td>0.0.17</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td title="If Discord currently tested and it runs" style="text-align: right;">Running:</td>
+            <td>False</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
 
-## Test Rsults
-| Distrubution | Version | Rsult | Bugs |
-|--------------|---------|-------|------|
-| FreeBSD | 13.1-RELEASE | Failed | Error in some file `typeerror: cannot read 'on' of undefined` |
-
-## Directorys
+## Directorys and Files
 ```yaml
 ../
 ├─ build/          # Build process will be done in here.
 ├─ desktops/       # Containing '.desktop' files.
 ├─ graphics/       # Graphics like the DoBSD logo.
-├─ modules/        # Files that needed to be Injected in to Discord so it runs on BSDs.
-├─ butcher.sh      # Installer script that does everything that is necessary
+├─ butcher.py      # Python installer script (WIP)
+└─ butcher.sh      # Shell installer script  (WIP)
 ```
 
-## How to
-To be able to modify your discord, you need following tools:
+## How To
+[Do it your self documentation (WIP)](https://github.com/b3yc0d3/dobsd/blob/main/diy.md)<br>
+[Using installer script (WIP)](https://github.com/b3yc0d3/dobsd/blob/main/README.md#installer-script)
+
+## Installer Script
+**Installer scripts are still in work**
+<!--To be able to modify your discord, you need following tools:
 - node & npm
 - asar (is a npm package: `npm i asar`)
 - tar
 - electron (needed from the ports)
 - your favorite editor
 
-### Use the Installer Script
-**TODO: add how to > use the installer script**
-<!--After you have installed all the necessary tools,<br>
-you can the execute `butcher.sh`, follow the instructions and done.<bR>
-*( you may need to run `chmod +x butcher.sh` befor )*-->
-
-### Do it by your self
-**TODO: add how to > do it your self**
-
-<br>
+To modify your discord, just execute one of the following scripts:
+```yaml
+# Shell Script Installer
+$ ./butcher.sh
+```-->
 
 ---
 ### **This project is *not* affiliated with Discord in any way**
