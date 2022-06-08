@@ -1,11 +1,14 @@
 <h1>
-<img alt="Discord on BSD Logo" height="80px" src="graphics/dobsd_logo-text_white.svg#gh-dark-mode-only">
-<img alt="Discord on BSD Logo" height="80px" src="graphics/dobsd_logo-text_black.svg#gh-light-mode-only">
+    <img alt="Discord on BSD Logo" height="80px" src="graphics/dobsd_logo-text_white.svg#gh-dark-mode-only">
+    <img alt="Discord on BSD Logo" height="80px" src="graphics/dobsd_logo-text_black.svg#gh-light-mode-only">
+    <br>
+    <img src="https://img.shields.io/badge/discord%20version-0.0.17-blue">
+    <a href="https://discord.gg/tvJ9KZxdnK" target="_blank"><img src="https://img.shields.io/discord/984044400529244190"></a>
 </h1>
 
-<!-- # Discord on BSD -->
 Since the Discord Developers seems to not care, let's try it our self's.<br>
-Inspired by the articel [FreeBSD Support for Discord App](https://support.discord.com/hc/en-us/community/posts/360068878251-FreeBSD-Support-for-Discord-App) in the Discord Support Forum.
+Inspired by the articel [FreeBSD Support for Discord App](https://support.discord.com/hc/en-us/community/posts/360068878251-FreeBSD-Support-for-Discord-App) in the Discord Support Forum.<br>
+We now have also a Discord Server, [Join it](https://discord.gg/tvJ9KZxdnK)
 
 ## Status
 <table>
