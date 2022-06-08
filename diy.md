@@ -37,8 +37,10 @@ The following paths are in the unpacked `app.asar`:
 │   │   └── freebsd.js       # is a copy of 'linux.js' (which is in the same directory)
 │   ├── firstStart
 │   │   └── freebsd.js       # is a copy of 'linux.js' (which is in the same directory)
-│   └── startupMenu
-│       └── freebsd.js       # is a copy of 'linux.js' (which is in the same directory)
+│   ├── startupMenu
+│   │   └── freebsd.js       # is a copy of 'linux.js' (which is in the same directory)
+│   └── hostUpdater.js       # copy the 'linux' case, from the switch case at the bottom
+│                            # of file.
 ├── common
 │   └── moduleUpdater.js     # insert Code Block 1, in switch case above of
                              # function 'cleanDownloadedModules'
@@ -50,5 +52,25 @@ The following paths are in the unpacked `app.asar`:
       remoteQuery.platform = 'freebsd';
       break;
 ```
-### 3. Modifying `discord_desktop_core/app.asar`
-**Currently in work**
+## 3. Modifying `discord_desktop_core/core.asar`
+**Work in progress**
+<!--The following paths are in the unpacked `core.asar`:
+```yaml
+├── app
+│   ├── applicationMenu
+│   │   └── freebsd.js       # is a copy of 'linux.js' (which is in the same directory)
+│   └── images
+│       └── systemtray
+│           └── freebsd      # is copy of folder 'linux' (which is in the same directory)
+├── common
+│   └── moduleUpdater.js     # insert Code Block 1, in switch case above of
+                             # function 'cleanDownloadedModules'
+```
+
+**Code Block 1**
+```javascript
+    case 'freebsd':
+      setFeedURL(`${endpoint}/updates/${buildInfo.releaseChannel}?platform=linux&version=${buildInfo.version}`);
+      remoteQuery.platform = 'freebsd';
+      break;
+```-->
