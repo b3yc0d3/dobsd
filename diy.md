@@ -13,6 +13,7 @@ The following files __must__ be replaced with files from `/usr/local/share/elect
 ```yaml
 ├── chrome_100_percent.pak
 ├── chrome_200_percent.pak
+├── chrome-sandbox
 ├── Discord
 ├── icudtl.dat
 ├── libEGL.so
