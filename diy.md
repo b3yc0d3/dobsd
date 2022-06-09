@@ -20,7 +20,6 @@ The following files __must__ be replaced with files from `/usr/local/share/elect
 ├── libffmpeg.so
 ├── libGLESv2.so
 ├── libvk_swiftshader.so
-├── postinst.sh
 ├── snapshot_blob.bin
 ├── swiftshader
 │   ├── libEGL.so
@@ -33,7 +32,7 @@ The following files __must__ be replaced with files from `/usr/local/share/elect
 The following paths are in the unpacked `app.asar`:
 ```yaml
 ├── app_bootstrap
-│   ├── autoStrat
+│   ├── autoStart
 │   │   └── freebsd.js       # is a copy of 'linux.js' (which is in the same directory)
 │   ├── firstStart
 │   │   └── freebsd.js       # is a copy of 'linux.js' (which is in the same directory)
